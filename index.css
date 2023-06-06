@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-image: url(./fondo.jpg);
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title {
+    color: gold;
+    margin: 15rem 0 0 53rem;
+    font-size: 7rem;
+}
+#subtitle {
+    font-size: 4rem;
+    margin: 1rem 2rem 0 51rem;
+    color: white;
+}
+#cards_el, #sum_el {
+font-size: 2.5rem;
+margin: 2rem 0 3rem 65rem;
+color: white;
+}
+input {
+    margin: 1rem 0 0 54rem;
+    font-size: 4rem;
+    background-color: gold;
+    color: green;
+    border: none;
+    border-radius: 0.5rem;
+    width: 30rem;
+    padding: 0.5rem;
+}
+#player-el {
+    position: absolute;
+    font-size: 3rem;
+    color: aliceblue;
+    left: 64rem;
+    bottom: 6rem;
+}
