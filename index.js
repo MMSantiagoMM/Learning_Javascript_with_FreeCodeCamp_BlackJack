@@ -7,7 +7,7 @@ let message = "";
 let Cards_el = document.getElementById("cards_el");
 let Sum_el = document.getElementById("sum_el");
 let Alive = true;
-/* let blackjack = false; */
+let blackjack = false;
 
 function randomCards() {
     let cardrandom = Math.floor(Math.random() * 13) + 1;
@@ -23,7 +23,7 @@ function startGame() {
         message = "Do you want to draw a new card?"
     } else if (sum === 21) {
         message = "Wooow! You're got out blackjack"
-        /*         blackjack = true; */
+                blackjack = true;
     } else {
         message = "You're out of the game"
         Alive = false;
@@ -37,14 +37,11 @@ function startGame() {
 }
 function newCard() {
 
-    if (Alive === true) {
+    if (Alive === true && blackjack === false) {
         let thirdCard = randomCards();
-
         cards.push(thirdCard);
         sum += cards[2];
         startGame()
     }
-
-
 
 }
